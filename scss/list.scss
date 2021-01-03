@@ -1,0 +1,22 @@
+.table{
+    th{
+        border-top: none;
+        border-bottom: 1px solid #121212;
+    }
+}
+
+.pagination{
+    position: relative;
+    bottom: 0;
+    left: 800px;
+    .page-link{
+        border: 1px solid#2A8356;
+        color: #121212;
+    }
+}
+
+.cobg{
+    background: #2A8356;
+    color: #fff;
+    
+}

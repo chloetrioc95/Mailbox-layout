@@ -1,0 +1,106 @@
+.nav {
+  background: #EDF4EE;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav a {
+  color: #121212;
+}
+
+.nav .bor {
+  border-left: 3px solid #2A8356;
+  color: #2A8356;
+}
+
+.media img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.navBra {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navBra ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.btn-primary {
+  background: #fff;
+  color: #121212;
+  border: none;
+}
+
+.btn-primary :hover {
+  background: #fff;
+  color: #121212;
+  border: none;
+}
+
+.primary {
+  color: #121212;
+}
+
+.fz {
+  font-size: 30px;
+}
+
+.table th {
+  border-top: none;
+  border-bottom: 1px solid #121212;
+}
+
+.pagination {
+  position: relative;
+  bottom: 0;
+  left: 800px;
+}
+
+.pagination .page-link {
+  border: 1px solid #2A8356;
+  color: #121212;
+}
+
+.cobg {
+  background: #2A8356;
+  color: #fff;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+a :hover {
+  text-decoration: none;
+}
+
+.material-icons {
+  vertical-align: middle;
+}
+
+.nav {
+  width: 25%;
+}
+
+.header {
+  width: 75%;
+}
+/*# sourceMappingURL=all.css.map */

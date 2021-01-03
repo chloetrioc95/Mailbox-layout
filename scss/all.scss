@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+@import "nav.scss";
+@import "navBra.scss";
+@import "list.scss";
+
+body{
+    display: flex;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    :hover{
+        text-decoration: none;
+    }
+}
+
+
+
+.material-icons{
+    vertical-align: middle;
+}
+
+.nav{
+    width: 25%;
+}
+
+.header{
+    width: 75%;
+}

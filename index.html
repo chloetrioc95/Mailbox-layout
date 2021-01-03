@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第五週作業</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="scss/all.css">
+</head>
+
+<body>
+
+    <div class="nav">
+        <nav class="nav flex-colum ml-4">
+            <a class="nav-link active mt-3" href="#">
+                <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/13f2e6e6b718b6abafb62ce7a672d42fc39eaeae/week5/logo-ANSWER.svg"
+                    alt="ANSWER"></a>
+            <a class="nav-link active" href="#">
+                <span class="material-icons mr-2">
+                    poll
+                </span>
+                Dashboard</a>
+            <a class="nav-link" href="#">
+                <span class="material-icons mr-2">
+                    question_answer
+                </span>Question</a>
+            <a class="nav-link" href="#">
+                <span class="material-icons mr-2">
+                    assignment
+                </span>
+                Assignment</a>
+            <a class="nav-link" href="#">
+                <span class="material-icons mr-2">
+                    video_library
+                </span>
+                Course</a>
+            <a class="nav-link bor" href="index.html">
+                <span class="material-icons mr-2">
+                    supervisor_account
+                </span>
+                Admin</a>
+            <a class="nav-link" href="#">
+                <span class="material-icons mr-2">
+                    settings
+                </span>
+                Settings</a>
+        </nav>
+
+        <div class="media ml-4">
+            <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/andychen.jpeg?raw=true"
+                class="mr-3" alt="andychen">
+            <div class="media-body">
+                <h5>Andy Chen</h5>
+                <p>andy0401@mail.com</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="header">
+        <div class="navBra ml-3 mt-2">
+            <h1 class="pr-2">Admin</h1>
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#exampleModal">
+                <span class="material-icons" style="color:#2A8356;">
+                    add
+                </span>
+                Add New Admin
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Edit Admin</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <h5>Account</h5>
+                                    <label for="exampleInputName">Name</label>
+                                    <input type="name" class="form-control" id="exampleInputName"
+                                        aria-describedby="emailHelp" placeholder="Emir Wicks">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Email</label>
+                                    <input type="email" class="form-control" id="exampleInputPassword1"
+                                        placeholder="emir.wicks@mail.com">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <h5>Verification</h5>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            Verified
+                                        </label>
+                                    </div>
+                                    <input class="form-control" type="text" placeholder="Send Verification Mail"
+                                        readonly>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <h5>Access Level</h5>
+                                    <select class="custom-select">
+                                        <option selected>Admin</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <h5>Custom Access</h5>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            lecture
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            Coupon
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            Message
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            Setting
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            task menu
+                                        </label>
+                                      </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="list-unstyled ml-auto">
+                <li><a href="#">
+                        <span class="material-icons primary fz mt-2 pr-5">
+                            search
+                        </span>
+                    </a></li>
+                <li><a href="#">
+                        <span class="material-icons primary fz mt-2">
+                            notifications_active
+                        </span>
+                    </a></li>
+            </ul>
+        </div>
+
+        <div class="list ml-3">
+            <table class="table">
+                <tr class="thble">
+                    <th>ID
+                        <span class="material-icons" style="color:#2A8356;">
+                            arrow_downward
+                        </span>
+                    </th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Verified</th>
+                </tr>
+                <tr>
+                    <td>#1</td>
+                    <td>Emir Wicks</td>
+                    <td>emir.wicks@mail.com</td>
+                    <td>Yes</td>
+                    <td class="btn">
+                        <button type="button" class="btn btn-link primary">
+                            <span class="material-icons">
+                                visibility
+                            </span>
+                        </button>
+                        <button type="button" class="btn btn-link primary">
+                            <span class="material-icons">
+                                create
+                            </span>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>#2</td>
+                    <td>Zaina Goldsmith</td>
+                    <td>zaina.goldsmith@mail.com</td>
+                    <td>Yes</td>
+                    <td class="btn">
+                        <button type="button" class="btn btn-link primary">
+                            <span class="material-icons">
+                                visibility
+                            </span>
+                        </button>
+                        <button type="button" class="btn btn-link primary">
+                            <span class="material-icons">
+                                create
+                            </span>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>#3</td>
+                    <td>Mahima Lopez</td>
+                    <td>Mahima.Lopez@mail.com</td>
+                    <td>Yes</td>
+                    <td class="btn">
+                        <button type="button" class="btn btn-link primary">
+                            <span class="material-icons">
+                                visibility
+                            </span>
+                        </button>
+                        <button type="button" class="btn btn-link primary">
+                            <span class="material-icons">
+                                create
+                            </span>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>#4</td>
+                    <td>Pharrell Murray</td>
+                    <td>Pharrell.Murray@mail.com</td>
+                    <td>Yes</td>
+                    <td class="btn">
+                        <button type="button" class="btn btn-link primary">
+                            <span class="material-icons">
+                                visibility
+                            </span>
+                        </button>
+                        <button type="button" class="btn btn-link primary">
+                            <span class="material-icons">
+                                create
+                            </span>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>#5</td>
+                    <td>Annika Mcbride</td>
+                    <td>Annika.Mcbride@mail.com</td>
+                    <td>Yes</td>
+                    <td class="btn">
+                        <button type="button" class="btn btn-link primary">
+                            <span class="material-icons">
+                                visibility
+                            </span>
+                        </button>
+                        <button type="button" class="btn btn-link primary">
+                            <span class="material-icons">
+                                create
+                            </span>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>#6</td>
+                    <td>Fatimah Clark</td>
+                    <td>Fatimah.Clark@mail.com</td>
+                    <td>Yes</td>
+                    <td class="btn">
+                        <button type="button" class="btn btn-link primary">
+                            <span class="material-icons">
+                                visibility
+                            </span>
+                        </button>
+                        <button type="button" class="btn btn-link primary">
+                            <span class="material-icons">
+                                create
+                            </span>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>#7</td>
+                    <td>Klaudia Rhodes</td>
+                    <td>Klaudia.Rhodes@mail.com</td>
+                    <td>Yes</td>
+                    <td class="btn">
+                        <button type="button" class="btn btn-link primary">
+                            <span class="material-icons">
+                                visibility
+                            </span>
+                        </button>
+                        <button type="button" class="btn btn-link primary">
+                            <span class="material-icons">
+                                create
+                            </span>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>#8</td>
+                    <td>Tillie Lucero</td>
+                    <td>Tillie.Lucero@mail.com</td>
+                    <td>Yes</td>
+                    <td class="btn">
+                        <button type="button" class="btn btn-link primary">
+                            <span class="material-icons">
+                                visibility
+                            </span>
+                        </button>
+                        <button type="button" class="btn btn-link primary">
+                            <span class="material-icons">
+                                create
+                            </span>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>#9</td>
+                    <td>Sabrina Stephenson</td>
+                    <td>Sabrina.Stephenson@mail.com</td>
+                    <td>Yes</td>
+                    <td class="btn">
+                        <button type="button" class="btn btn-link primary">
+                            <span class="material-icons">
+                                visibility
+                            </span>
+                        </button>
+                        <button type="button" class="btn btn-link primary">
+                            <span class="material-icons">
+                                create
+                            </span>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>#10</td>
+                    <td>Annie Smith</td>
+                    <td>Annie.Smith@mail.com</td>
+                    <td>Yes</td>
+                    <td class="btn">
+                        <button type="button" class="btn btn-link primary">
+                            <span class="material-icons">
+                                visibility
+                            </span>
+                        </button>
+                        <button type="button" class="btn btn-link primary">
+                            <span class="material-icons">
+                                create
+                            </span>
+                        </button>
+                    </td>
+                </tr>
+            </table>
+
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span calss="text-primary">&lt;</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link cobg" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span calss="text-primary">&gt;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+            integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+            integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
